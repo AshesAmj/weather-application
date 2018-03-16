@@ -4,4 +4,4 @@
 #### add a refresh button to show weekday ####
 #### add app icon ####
 
-![Alt text](/pic/weather_pic.gif)
+![照片无法显示](/pic/weather_pic.gif)
