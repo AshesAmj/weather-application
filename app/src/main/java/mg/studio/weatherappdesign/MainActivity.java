@@ -14,8 +14,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
-
-
+import java.util.Date;
+import java.text.SimpleDateFormat ;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -27,8 +27,33 @@ public class MainActivity extends AppCompatActivity {
     public void btnClick(View view) {
         new DownloadUpdate().execute();
     }
+    public void btnrefresh(View view){
 
+        new DownloadUpdate().execute();
+        Date day=new Date();
 
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy ");
+        ((TextView)findViewById(R.id.tv_date)).setText(df.format(day));
+        SimpleDateFormat weekday = new SimpleDateFormat("EEEE");
+        ((TextView)findViewById(R.id.week)).setText(weekday.format(day));
+
+    }
+    public void btnmonClick(View view) {
+        new DownloadUpdate().execute();
+        ((TextView)findViewById(R.id.week)).setText("Monday");
+    }
+    public void btnthuClick(View view) {
+        new DownloadUpdate().execute();
+        ((TextView)findViewById(R.id.week)).setText("Thursday");
+    }
+    public void btntueClick(View view) {
+        new DownloadUpdate().execute();
+        ((TextView)findViewById(R.id.week)).setText("Tuesday");
+    }
+    public void btnfriClick(View view) {
+        new DownloadUpdate().execute();
+        ((TextView)findViewById(R.id.week)).setText("Friday");
+    }
     private class DownloadUpdate extends AsyncTask<String, Void, String> {
 
 

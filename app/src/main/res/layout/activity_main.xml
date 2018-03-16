@@ -10,6 +10,7 @@
     tools:context="mg.studio.weatherappdesign.MainActivity">
 
     <TextView
+        android:id="@+id/week"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
@@ -104,6 +105,12 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"></LinearLayout>
+
             <RelativeLayout
                 android:id="@+id/tv_temperature"
                 android:layout_width="match_parent"
@@ -117,6 +124,9 @@
                     android:id="@+id/temperature_of_the_day"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
                     android:gravity="right"
                     android:text="28"
                     android:textColor="@android:color/white"
@@ -135,6 +145,20 @@
 
 
             </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/refresh1"
+                android:onClick="btnrefresh"
+                android:layout_marginLeft="79dp"
+                android:layout_marginStart="79dp"
+                android:layout_marginBottom="17dp"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout" />
 
 
         </RelativeLayout>
@@ -175,13 +199,20 @@
                 android:layout_height="48dp"
                 app:srcCompat="@drawable/rainy_small" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+
+            <Button
+                android:id="@+id/buttonmon"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_selector"
                 android:gravity="center"
-                android:text="mon"
-                android:textAllCaps="true"
-                android:textColor="#909090" />
+                android:onClick="btnmonClick"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="MON"
+                android:textStyle="bold"
+                android:textColor="#50ffffff" />
         </LinearLayout>
 
         <LinearLayout
@@ -196,13 +227,19 @@
                 android:layout_height="48dp"
                 app:srcCompat="@drawable/partly_sunny_small" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <Button
+                android:id="@+id/buttontue"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_selector"
                 android:gravity="center"
+                android:onClick="btntueClick"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:text="tue"
-                android:textAllCaps="true"
-                android:textColor="#909090" />
+                android:textStyle="bold"
+                android:textColor="#50ffffff" />
         </LinearLayout>
 
         <LinearLayout
@@ -217,13 +254,19 @@
                 android:layout_height="48dp"
                 app:srcCompat="@drawable/windy_small" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <Button
+                android:id="@+id/buttonthu"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_selector"
                 android:gravity="center"
+                android:onClick="btnthuClick"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:text="thu"
-                android:textAllCaps="true"
-                android:textColor="#909090" />
+                android:textStyle="bold"
+                android:textColor="#50ffffff" />
         </LinearLayout>
 
         <LinearLayout
@@ -238,13 +281,19 @@
                 android:layout_height="48dp"
                 app:srcCompat="@drawable/sunny_small" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <Button
+                android:id="@+id/buttonfri"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_selector"
                 android:gravity="center"
+                android:onClick="btnfriClick"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:text="fri"
-                android:textAllCaps="true"
-                android:textColor="#909090" />
+                android:textStyle="bold"
+                android:textColor="#50ffffff" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
