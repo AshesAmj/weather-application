@@ -2,6 +2,7 @@
 
 ![Weather application](display/weather_app_assign.png)
 
+<<<<<<< HEAD
 For our first Android application, let us design a Weather application. We will first complete the application, then discuss the details later. We will learn by doing.
 If we need to specify what we will be doing, here is the list:
 
@@ -1034,3 +1035,6 @@ It is important to note here that the information retrieved from the server base
 So far, I can download the latest weather temperature from the server as long as I have Internet access. What will happen if the device does not have access to the Internet?
 
 到目前为止,只要有互联网连接我们就可以从服务器下载最新的天气温度信息.那么当没有网络连接时我们的应用会怎么样呢?
+=======
+![照片无法显示](/pic/weather_pic.gif)
+>>>>>>> b11e43663b835a9ad73ad2905555c5e446fe5e58
